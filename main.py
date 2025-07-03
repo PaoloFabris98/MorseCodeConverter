@@ -10,8 +10,6 @@ for x in fraseDaConvertire:
         fraseConvertita += x
         print(f"Non è possibile convertire la lettera: {x}")
     else:
-        for i in morseDict.getMorseDict():
-            if(i == x):
-                fraseConvertita += (morseDict.getMorseDict()[x] + " ")
+        fraseConvertita += (morseDict.getMorseDict()[x] + " ")
 
 print(fraseConvertita)
